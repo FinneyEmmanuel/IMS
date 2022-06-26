@@ -6,6 +6,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import images from "../images/pexels.jpg";
+import images1 from "../images/Capture.PNG";
+
 
 function Register() {
   const schema = yup.object().shape({
@@ -43,8 +45,13 @@ function Register() {
   return (
     <div
       className="bg_image"
+      // style={{
+      //   backgroundImage: `url(${images})`,
+      //   backgroundSize: "cover",
+      //   height: "120vh",
+      // }}
       style={{
-        backgroundImage: `url(${images})`,
+        backgroundImage: `url(${images1})`,
         backgroundSize: "cover",
         height: "120vh",
       }}

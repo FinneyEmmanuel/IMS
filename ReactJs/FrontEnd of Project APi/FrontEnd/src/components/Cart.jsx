@@ -62,13 +62,19 @@ const Cart = () => {
                   </td>
 
                   {/* <Link to={`/admin/itemsclassesform/${itemsClasses._id}`}> */}
-                  <td className="text-black-900 px-6 py-4">User Name: </td>
+                  <td className="text-black-900 px-6 py-4">
+                    User Name: {c.customerId}{" "}
+                  </td>
                   {/* </Link> */}
-                  <td className="text-black-900 px-6 py-4">Items: </td>
-                  <td className="text-right px-6 py-4">Quantity: </td>
+                  <td className="text-black-900 px-6 py-4">
+                    Items:{c.items?.itemId}
+                  </td>
+                  <td className="text-right px-6 py-4">
+                    Quantity:{c.quantity?.name?.unit}{" "}
+                  </td>
 
                   <td className="text-center px-4 py-4 text-left ">
-                    Total Price:{" "}
+                    Total Price:{c.totalPrice}
                   </td>
                 </tr>
               ))}

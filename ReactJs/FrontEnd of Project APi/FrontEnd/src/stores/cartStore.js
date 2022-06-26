@@ -16,7 +16,10 @@ const useStore = create((set) => ({
       $push: {
         items: {
           itemId: data.item,
-          quantity: 1,
+          quantity: {
+            number: data.number,
+            unit: data.unit,
+          },
           totalPrice: data.price,
         },
       },

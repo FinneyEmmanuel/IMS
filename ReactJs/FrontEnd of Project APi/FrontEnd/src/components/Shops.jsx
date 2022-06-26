@@ -46,7 +46,9 @@ const Shops = () => {
             />
           </div>
           <Link to="/shopkeeper/shopsform">
-            <button className="absolute right-10 text-white mt-4">Add</button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white  py-1 px-3 rounded-full absolute text-white right-10 mt-2">
+              Add
+            </button>
           </Link>
         </div>
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">

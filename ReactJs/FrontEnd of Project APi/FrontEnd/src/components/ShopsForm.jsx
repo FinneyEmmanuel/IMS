@@ -39,7 +39,7 @@ const ShopsForm = () => {
   const categories = useStores((state) => state.categories);
   const retrieveCategory = useStores((state) => state.retrieveCategory);
   const shops = useStore((state) => state.shops);
-  const updateShops = useStores((state) => state.updateShops);
+  const updateShops = useStore((state) => state.updateShops);
 
   const params = useParams();
   const navigate = useNavigate();

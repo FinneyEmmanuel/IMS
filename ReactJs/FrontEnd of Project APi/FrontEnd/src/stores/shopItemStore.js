@@ -10,6 +10,11 @@ const useStore = create((set) => ({
     set((state) => ({ shopItems: (state = data) }));
   },
 
+  createShopItem: async (data) => {
+    const res = await axios.get("/shop-items", data);
+    return res;
+  },
+
   updateShopItem: async () => {},
 
   deleteShopItem: async (_id) => {

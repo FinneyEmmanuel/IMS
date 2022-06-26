@@ -58,7 +58,7 @@ function Customer() {
                   </div>
                 </div>
 
-                <div class="text-gray-400 flex relative px-4 hover:bg-gray-700 cursor-pointer">
+                {/* <div class="text-gray-400 flex relative px-4 hover:bg-gray-700 cursor-pointer">
                   <div class="mr-4 my-auto">
                     <svg
                       class="fill-current h-5 w-5"
@@ -120,7 +120,7 @@ function Customer() {
                   <div class="flex-auto my-1">
                     <span>Functions</span>
                   </div>
-                </div>
+                </div> */}
               </ul>
             </div>
           </div>

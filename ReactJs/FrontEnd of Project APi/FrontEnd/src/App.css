@@ -55,6 +55,10 @@
 .is-close .hidden-item {
   display: none;
 }
+.item-table{
+  border:0px solid black;
+  overflow:scroll
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -63,3 +67,4 @@
     transform: rotate(360deg);
   }
 }
+

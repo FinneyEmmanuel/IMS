@@ -9,16 +9,8 @@ module.exports = {
     all: [],
     find: [],
     get: [],
-    create: [
-      authenticate("jwt"),
-      validate.form(schema, { abortEarly: false }),
-      fetchCategory(),
-    ],
-    update: [
-      authenticate("jwt"),
-      validate.form(schema, { abortEarly: false }),
-      fetchCategory(),
-    ],
+    create: [validate.form(schema, { abortEarly: false }), fetchCategory()],
+    update: [validate.form(schema, { abortEarly: false }), fetchCategory()],
     patch: [],
     remove: [],
   },

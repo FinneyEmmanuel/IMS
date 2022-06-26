@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "../stores/itemStore";
-import useStores from "../stores/cartStore";
+// import useStores from "../stores/cartStore";
 import getUseStore from "../stores/loginStore";
 
 const Items = () => {
   const retrieveItems = useStore((state) => state.retrieveItems);
   const items = useStore((state) => state.items);
   const deleteItems = useStore((state) => state.deleteItems);
-  const addToCart = useStores((state) => state.addToCart);
+  // const addToCart = useStores((state) => state.addToCart);
   const login = getUseStore((state) => state.login);
-  const users = getUseStore((state) => state.users);
-  console.log("this is users", users);
+  // const users = getUseStore((state) => state.users);
 
   useEffect(() => {
     retrieveItems();
@@ -23,20 +22,20 @@ const Items = () => {
     console.log("in this field", item);
   };
 
-  let addItemToCart = (item) => {
-    console.log("in this field", item);
+  // let addItemToCart = (item) => {
+  //   console.log("in this field", item);
 
-    addToCart({
-      cartId: users.cartId,
-      item: item._id,
-      cutomerId: users._id,
-      price: item.price,
-    });
-  };
+  //   addToCart({
+  //     cartId: users.cartId,
+  //     item: item._id,
+  //     cutomerId: users._id,
+  //     price: item.price,
+  //   });
+  // };
 
   return (
-    <div className="max-w-6xl mx-auto py-40 mt-10">
-      <table className="border-collapse w-full mt-5">
+    <div className="max-w-6xl mx-auto py-40 mt-10  ">
+      <table className="border-collapse w-full  mt-5 overflow-auto item-table">
         <thead>
           <Link to="/admin/itemsform">
             <button className="bg-gray-300 hover:bg-blue-200 text-blue font-bold py-1 px-4 rounded-full absolute text-blue right-20 absolute top-48">

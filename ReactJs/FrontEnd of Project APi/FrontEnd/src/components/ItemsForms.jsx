@@ -12,14 +12,14 @@ const ItemsForms = () => {
     name: yup.string().min(3).max(50).required(),
     itemClass: yup.string().required(),
     description: yup.string().max(255),
-    quantity: yup.object().shape({
-      number: yup.number(),
-      unit: yup.string(),
-    }),
-    price: yup.object().shape({
-      amount: yup.number(),
-      unit: yup.string(),
-    }),
+    // quantity: yup.object().shape({
+    //   number: yup.number(),
+    //   unit: yup.string(),
+    // }),
+    // price: yup.object().shape({
+    //   amount: yup.number(),
+    //   unit: yup.string(),
+    // }),
   });
 
   const {

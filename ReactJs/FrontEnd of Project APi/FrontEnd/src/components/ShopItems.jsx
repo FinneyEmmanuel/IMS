@@ -84,6 +84,8 @@ const ShopItems = () => {
           ))}
         </tbody>
       </table>
+
+  
     </div>
   );
 };

@@ -8,7 +8,9 @@ module.exports = {
     all: [],
     find: [],
     get: [],
-    create: [validate.form(schema, { abortEarly: false }), fetchItemClasses()],
+    create: [(hook)=>{
+      console.log("in the hook", hook.data);
+    },validate.form(schema, { abortEarly: false }), fetchItemClasses()],
     update: [validate.form(schema, { abortEarly: false }), fetchItemClasses()],
     patch: [],
     remove: [],
